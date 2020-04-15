@@ -1,0 +1,16 @@
+#box{
+    
+    border:1px solid lightgray;
+    width: 70px;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:0;
+    font-size: 30px;
+}
+
+.editing{
+    border:5px solid rgb(27, 158, 202);
+}
