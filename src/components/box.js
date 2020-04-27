@@ -13,7 +13,7 @@ class Box extends Component{
     }
     checkNumber=(event)=>{
         let num =parseInt(event.target.value)
-        if(num > 10 || num<0 ){
+        if(num >= 10 || num<=0 ){
             
             alert('wrong input');
             event.target.value='';
@@ -23,10 +23,10 @@ class Box extends Component{
     }
 
     renderEdit(){
-        return(<input type='number' onKeyUp={this.checkNumber} box={this.box} id='box' className='editing' defaultValue={this.props.children} onChange={this.props.change}/>);
+        return(<input  onKeyUp={this.checkNumber} box="{this.props.box}" id='box' className='editing' defaultValue={this.props.children} onChange={this.props.change}/>);
     }
     renderNormal(){
-        return(<h1 box={this.box} id='box' onClick={this.edit}>{this.props.children}</h1>);
+        return(<h1 box={this.props.box} id='box' onClick={this.edit}>{this.props.children}</h1>);
     }
 
     render(){

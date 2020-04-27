@@ -1,3 +1,7 @@
 #line{
     display:flex
 }
+#column{
+    background-color: black;
+    width: 5px;
+}
