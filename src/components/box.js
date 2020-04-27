@@ -23,7 +23,7 @@ class Box extends Component{
     }
 
     renderEdit(){
-        return(<input  onKeyUp={this.checkNumber} box="{this.props.box}" id='box' className='editing' defaultValue={this.props.children} onChange={this.props.change}/>);
+        return(<input onKeyUp={this.checkNumber} box="{this.props.box}" id='box' className='editing' defaultValue={this.props.children} onChange={this.props.change}/>);
     }
     renderNormal(){
         return(<h1 box={this.props.box} id='box' onClick={this.edit}>{this.props.children}</h1>);
